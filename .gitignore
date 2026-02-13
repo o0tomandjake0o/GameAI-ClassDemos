@@ -1,0 +1,125 @@
+# ====================== Unity 核心忽略规则 ======================
+# Unity 自动生成的库目录（包含缓存、导入的资源，无需提交）
+/Library/
+
+# Unity 临时文件目录（编译、运行时生成的临时文件）
+/Temp/
+
+# Unity 导出的中间产物（如IL2CPP编译结果）
+/Obj/
+
+# Unity 资源服务器缓存
+/UnityLockFile
+
+# Unity 崩溃日志
+/*.stackdump
+
+# Unity 编辑器日志
+/Editor.log
+/Editor-prev.log
+
+# Unity 构建输出目录（打包后的游戏程序，按需忽略，若需共享构建配置可注释）
+/Build/
+/Builds/
+
+# Unity 日志目录
+/Logs/
+
+# Unity 性能分析器缓存
+/Assets/AddressableAssetsData/*/Build/*
+/Assets/StreamingAssets/aa/*
+
+# ====================== 平台专属忽略规则 ======================
+# Windows 专属
+*.bak
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+*.zip
+*.7z
+*.rar
+
+# macOS 专属
+.DS_Store
+.fseventsd
+.Spotlight-V100
+.Trashes
+*.swp
+*.lock
+*.orig
+
+# Linux 专属
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ====================== 代码编译产物 ======================
+# C# 编译产物
+/bin/
+/obj/
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.vshost.exe
+*.sln.docstates
+
+# Unity C# 项目文件（自动生成，无需提交）
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+# ====================== 第三方工具/IDE 忽略 ======================
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Rider/IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Git 本身的临时文件
+.gitattributes
+.gitignore.local
+.git/
+
+# ====================== 可选忽略规则（按需开启） ======================
+# 忽略 Asset Store 下载的资源（若团队共享资源库可注释）
+# /Assets/Plugins/
+# /Assets/Standard Assets/
+
+# 忽略自定义的测试资源（仅本地测试用）
+# /Assets/TestAssets/
+
+# 忽略 PlayerPrefs 缓存
+# /Library/PlayerPrefs/
+
+# 忽略 Addressables 构建缓存（若需共享构建配置可注释）
+# /Library/com.unity.addressables/
